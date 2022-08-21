@@ -41,11 +41,20 @@ h1 {
 
 .about-p,
 .name-p {
-    font-size: 1.4em;
-    line-height: 2em;
+    font-size: 1.5em;
+    line-height: 1.4em;
 }
 
 /* Layout */
+
+hr {
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid grey;
+    margin: 1em 0; 
+    padding: 0;
+}
 
 #myBtn {
     position: fixed;
@@ -55,7 +64,7 @@ h1 {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(220, 22, 22);
+    background-color: #262626;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -63,12 +72,8 @@ h1 {
 }
 
 .about-page {
-    /* height: 100%; */
-    /* margin-top: 200px; */
-    /* margin-bottom: 80px; */
-    padding: 10px;
-    box-shadow: 2px 0 2px #262626,
-        -2px 0 2px #262626;
+    padding: 10px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .home-heading {
@@ -77,14 +82,10 @@ h1 {
     align-items: center;
 }
 
-.home-heading .subtitle {
-    position: absolute;
-    top: 60%;
-}
-
 .front-image {
     display: block;
     margin: 0 auto;
+    width: 60%;
     filter: grayscale(100%);
     opacity: .6;
     border-radius: 10px 8px;
@@ -125,32 +126,27 @@ nav ul {
 }
 
 nav li {
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
-nav a {
-    text-decoration: none;
-    color: #707070;
+nav button:hover,
+nav button:focus {
+    color: rgb(220, 22, 22);
+    border-bottom: 1px solid #707070;
+}
+
+li button {
     font-weight: 700;
-    padding: .25em 0;
-}
-
-nav a:hover,
-nav a:focus {
-    color: #1792d2;
-    border-bottom: 1px solid #707070;
-}
-
-.current-page {
-    border-bottom: 1px solid #707070;
-}
-
-.current-page:hover {
+    font-size: 18px;
+    border: none;
+    background-color: #262626;
     color: #707070;
+    cursor: pointer;
+    padding: .25 0;
 }
 
 /* Media Query */
-@media (max-width: 600px) {
+@media only screen and (min-width:360px) and (max-width:600px) {
     .container-nav {
         flex-direction: column;
     }
@@ -169,10 +165,10 @@ nav a:focus {
     }
 
     .home-title {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .front-image {
-        width: 100%;
+        width: 90%;
     }
 }
