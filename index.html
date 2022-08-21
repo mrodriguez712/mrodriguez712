@@ -12,82 +12,95 @@
 </head>
 
 <body>
-
-    <!-- Heading/Navigation/Menu Bar -->
-    <header>
-        <div class="container container-nav">
-            <div class="site-title">
-                <h1>Marte Rodriguez</h1>
-                <p class="subtitle">A web developers' journey</p>
+    <div id="main-body">
+        <!-- Heading/Navigation/Menu Bar -->
+        <header id="navbar">
+            <div class="container container-nav">
+                <div id="site-title" class="site-title">
+                    <h1>Marte Rodriguez</h1>
+                    <p class="subtitle">A web developer's journey</p>
+                </div>
+                <nav>
+                    <ul>
+                        <!-- <li><a href="#section-one" class="current-page" onclick="myFunction()">Home</a></li> -->
+                        <li><a href="#section-two"
+                            onclick="section()">About Me</a></li>
+                        <li><a href="#section-three">Work</a></li>
+                        <li><a href="#section-four">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#section-one" class="current-page">Home</a></li>
-                    <li><a href="#section-two">Work</a></li>
-                    <li><a href="#section-three">About Me</a></li>
-                    <li><a href="#section-four">Contact</a></li>
-                </ul>
-            </nav>
+        </header>
+        <!-- Main Section -->
+        <div class="container">
+            <main>
+
+                <section id="section-one">
+                    <div class="home-heading">
+                        <h2 class="home-title">I am a Front End Web Developer</h2>
+                        <p class="subtitle">with jumbo mallows</p>
+                        <img src="images/user.jpg" alt="I am holding jumbo size mallows" class="front-image">
+                    </div>
+                </section>
+            <br><br>
+            <hr>
+            <br><br>
+                <section id="section-two">
+                    <div class="about-page">
+                        <h2 class="about-title">About Me</h2>
+                        <p class="about-p">My name is <span class="name-p">Marte Rodriguez</span></p>
+                        <p class="about-p">Creating something and solving problems-- these are the two things I am most passionate about.</p>
+                        <p class="about-p">Ever since I was a kid, I have always enjoyed building Lego's and transforming robots. As I
+                        grew up, I aspired to be a writer, an animator, or a video game developer, dreaming to see
+                        my characters come to life.</p>
+                        <p class="about-p"> After taking a two year degree for Web App and Cloud Development at Edmonds College, I
+                        instantly fell in love with coding. I enjoy what I build every time I code something and
+                        something pops up. I enjoy debugging problems that arise as I go through problems. I
+                        thoroughly look forward to new things I learn everyday.</p> 
+                    </div>
+                </section>
+
+                <section id="section-three">
+                    <div class="work-area">
+
+                    </div>
+                </section>
+
+                <section id="section-four">
+                    <div class="contact">
+
+                    </div>
+                </section>
+            </main>
+
+            <!-- Featured and Recent Work-->
+            <aside class="sidebar">
+                <div class="sidebar">
+                    <h2 class="sidebar-title"></h2>
+                    <div class="featured-work">
+                        <h3 class="featured"></h3>
+                        <img src="" alt="" class="featured-image">
+                    </div>
+                    <div class="featured-work">
+                        <h3 class="featured"></h3>
+                        <img src="" alt="" class="featured-image">
+                    </div>
+                    <div class="featured-work">
+                        <h3 class="featured"></h3>
+                        <img src="" alt="" class="featured-image">
+                    </div>
+                </div>
+            </aside>
+
         </div>
-    </header>
-
-    <!-- Main Section -->
-    <div class="container">
-        <main>
-
-            <section class="home-page" id="section-one">
-                <h2 class="home-title"></h2>
-                <img src="" alt="" class="home-image">
-                <p class="home-info"></p>
-                <p class="home-body"></p>
-                <a href="#" class="home-read-more"></a>
-            </section>
-
-            <section class="works-page" id="section-two">
-                <div class="work-area">
-
-                </div>
-            </section>
-
-            <section class="about-page" id="section-three">
-                <div class="about-me">
-
-                </div>
-            </section>
-
-            <section class="contact-page" id="section-four">
-                <div class="contact">
-
-                </div>
-            </section>
-        </main>
-
-        <!-- Featured and Recent Work-->
-        <aside class="sidebar">
-            <div class="sidebar">
-                <h2 class="sidebar-title"></h2>
-                <div class="featured-work">
-                    <h3 class="featured"></h3>
-                    <img src="" alt="" class="featured-image">
-                </div>
-                <div class="featured-work">
-                    <h3 class="featured"></h3>
-                    <img src="" alt="" class="featured-image">
-                </div>
-                <div class="featured-work">
-                    <h3 class="featured"></h3>
-                    <img src="" alt="" class="featured-image">
-                </div>
-            </div>
-        </aside>
-
+        <button id="myBtn">Go to Top</button>
+        <!-- Footer -->
+        <footer>
+            <p></p>
+            <p></p>
+        </footer>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <p></p>
-        <p></p>
-    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
